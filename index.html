@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IOAA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 4em;
+      color: #00bfff;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .button-group {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+      opacity: 0;
+      animation: fadeIn 2s ease 1s forwards;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      background-color: #00bfff;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background-color: #009acd;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>IOAA</h1>
+  <div class="button-group">
+    <button onclick="location.href='task.html'">Task</button>
+    <button onclick="location.href='daily-tasks.html'">Daily Tasks</button>
+    <button onclick="location.href='expenses.html'">Expenses</button>
+  </div>
+</body>
+</html>
